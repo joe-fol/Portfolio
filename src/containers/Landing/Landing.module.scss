@@ -1,0 +1,31 @@
+@import '../../index.scss';
+
+.landing {
+  background-image: url('../../images/__6_01033.jpg');
+  background-size: 250rem;
+  height: 150rem;
+  width: auto;
+  position: relative;
+  bottom: 5rem;
+  z-index: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+
+  .name {
+    color: $yellow;
+    font-size: 7rem;
+    grid-column: 2 / 4;
+    margin-left: 20rem;
+    margin-top: 35rem;
+  }
+
+  .dev {
+    color: $yellow;
+    font-size: 7rem;
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+    margin-left: 4rem;
+    padding-bottom: 10rem;
+  }
+}
