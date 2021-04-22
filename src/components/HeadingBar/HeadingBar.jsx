@@ -5,7 +5,7 @@ const HeadingBar = () => {
   return (
     <>
       <div className={styles.headingBar}>
-        <p></p>
+        <h2>About me...</h2>
       </div>
     </>
   );

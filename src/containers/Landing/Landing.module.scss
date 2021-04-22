@@ -3,7 +3,7 @@
 .landing {
   background-image: url('../../images/__6_01033.jpg');
   background-size: 250rem;
-  height: 150rem;
+  height: 165rem;
   width: auto;
   position: relative;
   bottom: 5rem;
@@ -18,6 +18,7 @@
     grid-column: 2 / 4;
     margin-left: 20rem;
     margin-top: 35rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   .dev {
@@ -27,5 +28,6 @@
     grid-row: 2 / 3;
     margin-left: 4rem;
     padding-bottom: 10rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
