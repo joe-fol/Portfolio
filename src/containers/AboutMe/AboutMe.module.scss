@@ -3,14 +3,55 @@
 .aboutPage {
   background-image: url("../../images/000048.JPG");
   background-size: 250rem;
-  background-repeat: no-repeat;
   height: 170rem;
   width: auto;
   position: relative;
   bottom: 10rem;
   display: flex;
-  justify-content: space-evenly;
 
   .aboutContentContainer {
+    width: 100%;
+    margin-top: 17rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .aboutPhoto {
+      background-image: url("../../images/me1.jpg");
+      background-size: 70rem;
+      height: 62rem;
+      width: 69rem;
+      margin: 0 20rem;
+      border-radius: 3rem;
+    }
+
+    .aboutText {
+      height: 62rem;
+      width: 70rem;
+      margin: 0 20rem;
+      border-radius: 3rem;
+      background-color: rgba(141, 139, 139, 0.8);
+      backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+      -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+        brightness(140%);
+
+      p {
+        color: $yellow;
+        font-size: 3rem;
+        margin: 2rem;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    .aboutStack {
+      text-align: center;
+      width: 70%;
+      height: 40rem;
+      border-radius: 3rem;
+      background-color: rgba(141, 139, 139, 0.8);
+      backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+      -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+        brightness(140%);
+    }
   }
 }
