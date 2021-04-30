@@ -1,0 +1,35 @@
+@import '../../index.scss';
+
+
+.header {
+  position: relative;
+  bottom: 5rem;
+  transform: rotate(-1.5deg);
+
+  h2 {
+    transform: rotate(1deg);
+  }
+}
+.projectPage {
+  background-image: url("../../images/_37_01064.jpg");
+  background-size: 250rem;
+  height: 130rem;
+  width: auto;
+  position: relative;
+  z-index: -1;
+  bottom: 15rem;
+  display: flex;
+  justify-content: center;
+
+  .work {
+    height: 70rem;
+    width: 70%;
+    margin-top: 10rem;
+    border-radius: 3rem;
+      background-color: rgba(141, 139, 139, 0.8);
+      backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+      -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+        brightness(140%);
+  }
+}
+  

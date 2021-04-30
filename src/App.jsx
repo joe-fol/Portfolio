@@ -2,6 +2,8 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Landing from "./containers/Landing/Landing";
 import AboutMe from "./containers/AboutMe";
+import Projects from "./containers/Projects";
+import ContactMe from './containers/ContactMe';
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
       <Navbar />
       <Landing />
       <AboutMe />
+      <Projects />
+      <ContactMe />
     </>
   );
 }

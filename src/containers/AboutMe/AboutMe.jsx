@@ -2,10 +2,12 @@ import React from "react";
 import styles from "./AboutMe.module.scss";
 import HeadingBar from "../../components/HeadingBar/HeadingBar";
 
-const AboutMe = () => {
+const AboutMe = (props) => {
+  const { header } = props;
+
   return (
     <>
-      <HeadingBar />
+      <HeadingBar className={styles.aboutMe} header='About me...'/>
       <div className={styles.aboutPage}>
         <div className={styles.aboutContentContainer}>
           <div className={styles.aboutPhoto}></div>
