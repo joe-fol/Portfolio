@@ -1,13 +1,108 @@
+@import '../../index.scss';
+
 .header {
   position: relative;
   bottom: 10rem;
+  z-index: 5;
 }
 .contactPage {
   background-image: url('../../images/000017.JPG');
   background-size: 250rem;
+  margin-top: 5rem;
   height: 130rem;
   width: auto;
   position: relative;
   bottom: 25rem;
-  margin-bottom: -35rem;
+  margin-bottom: -40rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .formRight {
+    // margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 100rem;
+    margin-top: 2rem;
+  }
+  label {
+    color: $yellow;
+    font-size: 3rem;
+    margin-left: 5rem;
+    margin-top: 3rem;
+    // text-shadow: $shadow;
+  }
+  input {
+    color: $yellow;
+    font-size: 3rem;
+    margin: 3rem;
+    text-shadow: $shadow;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    text-indent: 5rem;
+    width: 100rem;
+    height: 7rem;
+    border-radius: 3rem;
+    gap: 5rem;
+    border-radius: 3rem;
+    background-color: rgba(141, 139, 139, 0.8);
+    backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+      brightness(140%);
+
+    &:focus {
+      outline: none;
+    }
+
+  }
+
+  button {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    width: 24rem;
+    height: 4rem;
+    background-color: $black;
+    color: $yellow;
+    border-radius: 3rem;
+  }
+
+  textarea {
+    padding-top: 1rem;
+    margin-left: 3rem;
+    color: $yellow;
+    text-shadow: $shadow;
+    width: 100rem;
+    height: 40rem;
+    border-radius: 3rem;
+    background-color: rgba(141, 139, 139, 0.8);
+    backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+      brightness(140%);
+    text-indent: 4rem;
+    font-size: 3rem;
+    
+    &:focus {
+      outline: none;
+    }
+  }
+  .formLeft {
+    margin-top: 10rem;
+    width: 100rem;
+    height: 60rem;
+    border-radius: 3rem;
+    background-color: rgba(141, 139, 139, 0.8);
+    backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+      brightness(140%);
+
+    p {
+      color: $yellow;
+      font-size: 3rem;
+      margin: 3rem;
+      text-shadow: $shadow;
+    }
+  }
 }

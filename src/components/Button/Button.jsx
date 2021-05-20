@@ -1,14 +1,18 @@
-import React from "react";
-import styles from "./Button.module.scss";
+import React from 'react';
+import styles from './Button.module.scss';
 
-const Button = () => {
+const Button = (props) => {
+  const style =
+    props.label === 'Projects' || props.label === 'Github'
+      ? styles.projects
+      : '';
+    
+
   return (
     <>
-      <div className={styles.navButtonWrapper} >
-        <button className={styles.buttonNavBar}>Projects</button>
-        <button className={styles.buttonNavBar}>Contact me</button>
-        <button className={styles.buttonNavBar}>About me...</button>
-      </div>
+      <button className={style}>
+          <a href={`#${props.link}`}>{props.label}</a>
+      </button>
     </>
   );
 };

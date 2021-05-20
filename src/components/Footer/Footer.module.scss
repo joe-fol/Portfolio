@@ -1,11 +1,52 @@
 @import '../../index.scss';
 
-.footer {
-  background-color: $black;
-  position: relative;
-  z-index: 1;
+footer {
+  .footerButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $black;
+    position: relative;
+    z-index: 1;
+    height: 20rem;
+    width: 100%;
+    border-top: 1rem solid $yellow;
 
-  button {
-    margin: 2rem;
+    p {
+      color: $yellow;
+      font-size: 3rem;
+      margin-left: 3rem;
+    }
+
+    .buttonWrapper {
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      Button {
+        font-size: 2rem;
+        width: 24rem;
+        height: 10rem;
+        background-color: $black;
+        color: $yellow;
+        box-shadow: dimgray 10px 10px 2px 1px;
+
+        &:hover {
+          margin-top: 1rem;
+          box-shadow: dimgray 10px 10px 2px 1px;
+        }
+
+        .git {
+          border-radius: 25px 0 0 25px;
+        }
+
+        a {
+          text-decoration: none;
+          color: $yellow;
+          font-size: 2rem;
+        }
+      }
+    }
   }
 }

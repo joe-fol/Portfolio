@@ -6,7 +6,7 @@ const Landing = () => {
     <>
       <div className={styles.landing}>
         <h2 className={styles.name}>Joe Folkard</h2>
-        <h2 className={styles.dev}>Web Developer</h2>
+        <h2 className={styles.dev}>Software Developer</h2>
       </div>
     </>
   );
