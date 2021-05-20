@@ -1,0 +1,22 @@
+@import '../../index.scss';
+
+.signUp, .error {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $yellow;
+  text-shadow: $shadow;
+  font-size: 3rem;
+  margin: 3rem;
+  width: 100rem;
+  height: 40rem;
+  border-radius: 3rem;
+  background-color: rgba(141, 139, 139, 0.8);
+  backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+    brightness(140%);
+  
+  
+  
+}

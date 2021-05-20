@@ -1,6 +1,31 @@
-@import '../../index.scss';
+@import "../../index.scss";
 
 .headingBar {
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  margin-left: -1rem;
+  margin-right: -1rem;
   background-color: $black;
+  height: 50rem;
+  transform: rotate(1deg);
+  position: relative;
+  z-index: 2;
+  bottom: 7rem;
+  right: 0.3rem;
+  border-bottom: 1rem solid $yellow;
+  border-top: 1rem solid $yellow;
+
+  h2 {
+    color: $yellow;
+    font-size: 7rem;
+    margin-right: 5rem;
+    transform: rotate(-1deg);
+  }
+
+}
+
+.projectHeader {
+  background-color: blue;
 }

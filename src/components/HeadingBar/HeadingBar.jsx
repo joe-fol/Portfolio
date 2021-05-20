@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./HeadingBar.module.scss";
 
-const HeadingBar = () => {
+const HeadingBar = (props) => {
   return (
     <>
       <div className={styles.headingBar}>
-        <p></p>
+        <h2>{props.header}</h2>
       </div>
     </>
   );
