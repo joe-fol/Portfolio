@@ -3,7 +3,7 @@ import styles from './Navbar.module.scss';
 import Button from '../Button';
 
 
-const Navbar = (props) => {
+const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <div className={styles.logo}></div>

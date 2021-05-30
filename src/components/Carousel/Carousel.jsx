@@ -6,14 +6,14 @@ const Carousel = (props) => {
   return (
     <>
       <section className={styles.carousel}>
-        <h2>{projects[0].strName}</h2>
+        <h2>{props.name}</h2>
         <div className={styles.image} >
-          <img src={projects[0].strImg} alt="projects" />
+          <img src={props.img} alt="projects" />
         </div>
-        <p>{projects[0].strBlurb}</p>
+        <p>{props.blurb}</p>
           <nav>
-            <a className={styles.strCode} href={projects[0].strCode}>Code</a>
-            <a className={styles.git} href={projects[0].strPages}>Github Pages</a>
+            <a className={styles.strCode} href={props.code}>Code</a>
+            <a className={styles.git} href={props.ghPages}>Github Pages</a>
           </nav>
       </section>
     </>

@@ -1,55 +1,283 @@
 @import '../../index.scss';
 
-.navbar {
-  width: 100%;
-  height: 33rem;
-  background-color: $black;
-  border-bottom: 1rem solid $yellow;
-  display: flex;
-  justify-content: space-around;
-  position: relative;
-  z-index: 3;
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /* Styles */
+}
 
-  .logo {
-    position: relative;
-    background-image: url('../../images/logo/logo.svg');
-    background-size: 60rem;
-    height: 60rem;
-    width: 70rem;
-    left: 10rem;
-
-  }
-
-
-  .buttonWrapper {
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  .navbar {
     width: 100%;
+    height: 10rem;
+    background-color: $black;
+    border-bottom: 0.4rem solid $yellow;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    z-index: 3;
 
-    Button {
-      font-size: 2rem;
-      width: 24rem;
-      height: 10rem;
-      background-color: $black;
-      color: $yellow;
-      box-shadow: dimgray 10px 10px 2px 1px;
-
-      &:hover {
-        margin-top: 1rem;
-        box-shadow: dimgray 10px 10px 2px 1px;
-      }
-
-      a {
-        text-decoration: none;
-        font-size: 2rem;
-        color: $yellow;
-      }
+    .logo {
+      position: relative;
+      background-image: url('../../images/logo/logo.svg');
+      background-size: 20rem;
+      height: 20rem;
+      width: 25rem;
+      left: 1rem;
+      top: 1rem;
     }
 
+    .buttonWrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+
+      Button {
+        font-size: 5px;
+        width: 12rem;
+        height: 5rem;
+        background-color: $black;
+        color: $yellow;
+        box-shadow: dimgray 5px 5px 1px 1px;
+
+        &:hover {
+          margin-top: 1rem;
+          box-shadow: dimgray 5px 5px 1px 1px;
+        }
+
+        a {
+          text-decoration: none;
+          font-size: 1.3rem;
+          color: $yellow;
+        }
+
+      }
+      
+    }
   }
+}
 
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 376px) {
+  .navbar {
+    width: 100%;
+    height: 10rem;
+    background-color: $black;
+    border-bottom: 0.4rem solid $yellow;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 3;
 
+    .logo {
+      position: relative;
+      background-image: url('../../images/logo/logo.svg');
+      background-size: 80rem;
+      height: 80rem;
+      width: 80rem;
+      left: 10rem;
+      top: 10rem;
+    }
 
+    .buttonWrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+
+      Button {
+        font-size: 5px;
+        width: 12rem;
+        height: 5rem;
+        background-color: $black;
+        color: $yellow;
+        box-shadow: dimgray 5px 5px 1px 1px;
+
+        &:hover {
+          margin-top: 1rem;
+          box-shadow: dimgray 5px 5px 1px 1px;
+        }
+
+        a {
+          text-decoration: none;
+          font-size: 1.3rem;
+          color: $yellow;
+        }
+
+      }
+      
+    }
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .navbar {
+    width: 100%;
+    height: 11rem;
+    background-color: $black;
+    border-bottom: 0.4rem solid $yellow;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 3;
+
+    .logo {
+      position: relative;
+      background-image: url('../../images/logo/logo.svg');
+      background-size: 20rem;
+      height: 20rem;
+      width: 21rem;
+      left: 1rem;
+    }
+
+    .buttonWrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+
+      Button {
+        font-size: 5px;
+        width: 12rem;
+        height: 5rem;
+        background-color: $black;
+        color: $yellow;
+        box-shadow: dimgray 5px 5px 1px 1px;
+
+        &:hover {
+          margin-top: 1rem;
+          box-shadow: dimgray 5px 5px 1px 1px;
+        }
+
+        a {
+          text-decoration: none;
+          font-size: 1.3rem;
+          color: $yellow;
+        }
+      }
+    }
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .navbar {
+    width: 100%;
+    height: 11rem;
+    background-color: $black;
+    border-bottom: 0.4rem solid $yellow;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 3;
+
+    .logo {
+      position: relative;
+      background-image: url('../../images/logo/logo.svg');
+      background-size: 20rem;
+      height: 20rem;
+      width: 22rem;
+      left: 1rem;
+    }
+
+    .buttonWrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+
+      Button {
+        font-size: 5px;
+        width: 12rem;
+        height: 5rem;
+        background-color: $black;
+        color: $yellow;
+        box-shadow: dimgray 5px 5px 1px 1px;
+
+        &:hover {
+          margin-top: 1rem;
+          box-shadow: dimgray 5px 5px 1px 1px;
+        }
+
+        a {
+          text-decoration: none;
+          font-size: 1.3rem;
+          color: $yellow;
+        }
+      }
+    }
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  .navbar {
+    width: 100%;
+    height: 33rem;
+    background-color: $black;
+    border-bottom: 1rem solid $yellow;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 3;
+
+    .logo {
+      position: relative;
+      background-image: url('../../images/logo/logo.svg');
+      background-size: 60rem;
+      height: 60rem;
+      width: 70rem;
+      left: 10rem;
+    }
+
+    .buttonWrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+
+      Button {
+        font-size: 2rem;
+        width: 24rem;
+        height: 10rem;
+        background-color: $black;
+        color: $yellow;
+        box-shadow: dimgray 10px 10px 2px 1px;
+
+        &:hover {
+          margin-top: 1rem;
+          box-shadow: dimgray 10px 10px 2px 1px;
+        }
+
+        a {
+          text-decoration: none;
+          font-size: 2rem;
+          color: $yellow;
+        }
+      }
+    }
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
 }

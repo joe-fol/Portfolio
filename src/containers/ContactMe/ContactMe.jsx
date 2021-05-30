@@ -33,19 +33,3 @@ const ContactMe = () => {
 };
 
 export default ContactMe;
-
-// <div className={styles.contactPage}>
-//   <form className={styles.formRight}>
-//     {/* <label for="name">Full Name</label> */}
-//     <p>Full Name</p>
-//     <input type="text" id="name" name="name" />
-//     {/* <label for="email">Email</label> */}
-//     <p>Email</p>
-//     <input type="email" id="email" name="email" />
-//     <textarea
-//       name="userInput"
-//       id="userInput"
-//       cols="40"
-//       rows="20"></textarea>
-//   </form>
-// </div>

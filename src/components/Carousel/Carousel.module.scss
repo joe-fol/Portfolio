@@ -1,55 +1,289 @@
 @import '../../index.scss';
 
-.carousel {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      color: $yellow;
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /* Styles */
+}
 
-      h2 {
-        font-size: 6rem;
-        margin-bottom: 2rem;
-        text-shadow: $shadow;
-      }
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 667px) {
+  .carousel {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: $yellow;
+    margin-top: 2rem;
 
-      .image {
-        height: 60%; 
-        width: 80%;
-        display: flex; 
-        align-items: center;
-        justify-content: center;
-        border-radius: 3rem;
-
-        img {
-          width: 90%;
-          height: 90%;
-          background-color: blue;
-          border-radius: 3rem;
-          box-shadow: 10px 10px 20px dimgray;
-        }
-      }
-
-      p {
-        margin: 3rem 0 3rem 0;
-        font-size: 2.5rem;
-        text-shadow: $shadow;
-        text-align: center;
-        
-      }
-
-      a {
-        margin: 6rem 10rem 0 10rem;
-        font-size: 2rem;
-        color: $yellow;
-        text-decoration: none;
-        text-shadow: $shadow;
-
-      
-      }
-
-    
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-shadow: $shadow;
     }
+
+    .image {
+      height: 25rem;
+      width: 35rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3rem;
+
+      img {
+        width: 70%;
+        height: 90%;
+        border-radius: 3rem;
+        box-shadow: 10px 10px 20px dimgray;
+      }
+    }
+
+    p {
+      margin: 0.5rem 0 0.5rem 0;
+      font-size: 0.9rem;
+      text-shadow: $shadow;
+      text-align: center;
+      width: 80%;
+    }
+
+    a {
+      margin: 2rem 1rem 0 2rem;
+      font-size: 1.2rem;
+      color: $yellow;
+      text-decoration: none;
+      text-shadow: $shadow;
+    }
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 376px) {
+  .carousel {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: $yellow;
+    margin-top: 2rem;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-shadow: $shadow;
+    }
+
+    .image {
+      height: 25rem;
+      width: 35rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3rem;
+
+      img {
+        width: 70%;
+        height: 90%;
+        border-radius: 3rem;
+        box-shadow: 10px 10px 20px dimgray;
+      }
+    }
+
+    p {
+      margin: 0.5rem 0 0.5rem 0;
+      font-size: 0.9rem;
+      text-shadow: $shadow;
+      text-align: center;
+      width: 80%;
+    }
+
+    a {
+      margin: 2rem 1rem 0 2rem;
+      font-size: 1.2rem;
+      color: $yellow;
+      text-decoration: none;
+      text-shadow: $shadow;
+    }
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .carousel {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: $yellow;
+
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      text-shadow: $shadow;
+    }
+
+    .image {
+      height: 60%;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3rem;
+
+      img {
+        width: 70%;
+        height: 90%;
+        background-color: blue;
+        border-radius: 3rem;
+        box-shadow: 10px 10px 20px dimgray;
+      }
+    }
+
+    p {
+      margin: 1rem 0 1rem 0;
+      font-size: 1.1rem;
+      text-shadow: $shadow;
+      text-align: center;
+      width: 50%;
+    }
+
+    a {
+      margin: 6rem 10rem 0 10rem;
+      font-size: 1.5rem;
+      color: $yellow;
+      text-decoration: none;
+      text-shadow: $shadow;
+    }
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .carousel {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 22rem;
+    color: $yellow;
+
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      text-shadow: $shadow;
+    }
+
+    .image {
+      height: 60%;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3rem;
+
+      img {
+        width: 70%;
+        height: 90%;
+        background-color: blue;
+        border-radius: 3rem;
+        box-shadow: 10px 10px 20px dimgray;
+      }
+    }
+
+    p {
+      margin: 1rem 0 1rem 0;
+      font-size: 1.1rem;
+      text-shadow: $shadow;
+      text-align: center;
+      width: 50%;
+    }
+
+    a {
+      margin: 0 5rem 0 5rem;
+      font-size: 1.5rem;
+      color: $yellow;
+      text-decoration: none;
+      text-shadow: $shadow;
+    }
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  .carousel {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: $yellow;
+
+    h2 {
+      font-size: 6rem;
+      margin-bottom: 2rem;
+      text-shadow: $shadow;
+    }
+
+    .image {
+      height: 60%;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3rem;
+
+      img {
+        width: 70%;
+        height: 90%;
+        background-color: blue;
+        border-radius: 3rem;
+        box-shadow: 10px 10px 20px dimgray;
+      }
+    }
+
+    p {
+      margin: 3rem 0 3rem 0;
+      font-size: 2.5rem;
+      text-shadow: $shadow;
+      text-align: center;
+      width: 80%;
+    }
+
+    a {
+      margin: 6rem 10rem 0 10rem;
+      font-size: 2rem;
+      color: $yellow;
+      text-decoration: none;
+      text-shadow: $shadow;
+    }
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+}

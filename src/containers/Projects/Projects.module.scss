@@ -1,46 +1,272 @@
 @import '../../index.scss';
 
-.header {
-  position: relative;
-  bottom: 5rem;
-  transform: rotate(-1.5deg);
-  z-index: 6;
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /* Styles */
+}
 
-  h2 {
-    transform: rotate(1deg);
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 667px) {
+ .header {
+    position: relative;
+    bottom: 5rem;
+    transform: rotate(-1.5deg);
+    z-index: 6;
+
+    h2 {
+      transform: rotate(1deg);
+    }
+  }
+  .projectPage {
+    background-image: url('../../images/_37_01064.jpg');
+    background-size: 110rem;
+    background-position: 40%;
+    height: 70rem;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    bottom: 15rem;
+    display: flex;
+    justify-content: center;
+
+    .work {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      height: 55rem;
+      width: 80%;
+      margin-top: 10rem;
+      border-radius: 3rem;
+      background-color: rgba(141, 139, 139, 0.8);
+      backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+      -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+        brightness(140%);
+
+      .small {
+        display: flex;
+        width: 100%;
+        height: inherit;
+        border-radius: 1rem;
+        overflow-y: hidden;
+        overflow-x: scroll;
+      }
+    }
+  }}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 376px) {
+  .header {
+    position: relative;
+    bottom: 5rem;
+    transform: rotate(-1.5deg);
+    z-index: 6;
+
+    h2 {
+      transform: rotate(1deg);
+    }
+  }
+  .projectPage {
+    background-image: url('../../images/_37_01064.jpg');
+    background-size: 110rem;
+    background-position: 40%;
+    height: 70rem;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    bottom: 15rem;
+    display: flex;
+    justify-content: center;
+
+    .work {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      height: 55rem;
+      width: 80%;
+      margin-top: 10rem;
+      border-radius: 3rem;
+      background-color: rgba(141, 139, 139, 0.8);
+      backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+      -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+        brightness(140%);
+
+      .small {
+        display: flex;
+        width: 100%;
+        height: inherit;
+        border-radius: 1rem;
+        overflow-y: hidden;
+        overflow-x: scroll;
+      }
+    }
   }
 }
-.projectPage {
-  background-image: url('../../images/_37_01064.jpg');
-  background-size: 250rem;
-  height: 130rem;
-  width: auto;
-  position: relative;
-  z-index: 5;
-  bottom: 15rem;
-  display: flex;
-  justify-content: center;
 
-  .work {
-    display: flex;
-    height: 70rem;
-    width: 70%;
-    margin-top: 15rem;
-    border-radius: 3rem;
-    background-color: rgba(141, 139, 139, 0.8);
-    backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
-    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%)
-      brightness(140%);
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Styles */
+}
 
-    .small {
-      width: 30%;
-      height: auto;
-      border-right: 1rem solid rgba(141, 139, 139, 0.2);
-      border-radius: 3rem;
-      overflow: auto;
-    }
-    .big {
-      margin-left: 10%;
+/* iPads (landscape) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .header {
+    position: relative;
+    bottom: 5rem;
+    transform: rotate(-1.5deg);
+    z-index: 6;
+
+    h2 {
+      transform: rotate(1deg);
     }
   }
+  .projectPage {
+    background-image: url('../../images/_37_01064.jpg');
+    background-size: 150rem;
+    height: 80rem;
+    width: auto;
+    position: relative;
+    z-index: 5;
+    bottom: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .work {
+      display: flex;
+      height: 50rem;
+      width: 70%;
+      margin-top: 5rem;
+
+      border-radius: 3rem;
+      background-color: rgba(141, 139, 139, 0.8);
+      backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+      -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+        brightness(140%);
+
+      .small {
+        width: 40%;
+        height: auto;
+        border-right: 1rem solid rgba(141, 139, 139, 0.2);
+        border-radius: 3rem;
+        overflow: auto;
+      }
+
+      .big {
+        height: 80%;
+      }
+    }
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .header {
+    position: relative;
+    bottom: 5rem;
+    transform: rotate(-1.5deg);
+    z-index: 6;
+
+    h2 {
+      transform: rotate(1deg);
+    }
+  }
+  .projectPage {
+    background-image: url('../../images/_37_01064.jpg');
+    background-size: 150rem;
+    height: 80rem;
+    width: auto;
+    position: relative;
+    z-index: 5;
+    bottom: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .work {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      height: 50rem;
+      width: 70%;
+      margin-top: 2rem;
+      border-radius: 3rem;
+      background-color: rgba(141, 139, 139, 0.8);
+      backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+      -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+        brightness(140%);
+
+      .small {
+        display: flex;
+        padding-bottom: 40rem;
+        width: 80%;
+        // margin: 1rem 10rem;
+        height: 10rem;
+        border-top: 1rem solid rgba(141, 139, 139, 0.2);
+        border-radius: 3rem;
+        overflow-y: hidden;
+        overflow-x: scroll;
+      }
+
+      .big {
+        height: 50rem;
+        // padding-top: 2rem;
+      }
+    }
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  .header {
+    position: relative;
+    bottom: 5rem;
+    transform: rotate(-1.5deg);
+    z-index: 6;
+
+    h2 {
+      transform: rotate(1deg);
+    }
+  }
+  .projectPage {
+    background-image: url('../../images/_37_01064.jpg');
+    background-size: 250rem;
+    height: 130rem;
+    width: auto;
+    position: relative;
+    z-index: 5;
+    bottom: 15rem;
+    display: flex;
+    justify-content: center;
+
+    .work {
+      display: flex;
+      height: 70rem;
+      width: 70%;
+      margin-top: 15rem;
+      border-radius: 3rem;
+      background-color: rgba(141, 139, 139, 0.8);
+      backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+      -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+        brightness(140%);
+
+      .small {
+        width: 30%;
+        height: auto;
+        border-right: 1rem solid rgba(141, 139, 139, 0.2);
+        border-radius: 3rem;
+        overflow: auto;
+      }
+    }
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
 }

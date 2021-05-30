@@ -1,52 +1,64 @@
 @import '../../index.scss';
 
-.aboutPage {
-  background-image: url('../../images/000048.JPG');
-  background-size: 250rem;
-  height: 170rem;
-  width: auto;
-  position: relative;
-  bottom: 10rem;
-  display: flex;
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /* Styles */
+}
 
-  .aboutContentContainer {
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 667px) {
+  .aboutPage {
+    background-image: url('../../images/000048.JPG');
+    background-size: 110rem;
+    background-position: 20%;
+    height: 70rem;
     width: 100%;
-    margin-top: 17rem;
+    position: relative;
+    bottom: 10rem;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 
-    .aboutPhoto {
-      background-image: url('../../images/me1.jpg');
-      background-size: 70rem;
-      height: 62rem;
-      width: 69rem;
-      margin: 0 20rem;
-      border-radius: 3rem;
-    }
+    .aboutContentContainer {
+      width: 100%;
+      height: fit-content;
+      margin-top: 5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
 
-    .aboutText {
-      height: 62rem;
-      width: 70rem;
-      margin: 0 20rem;
-      border-radius: 3rem;
-      background-color: rgba(141, 139, 139, 0.8);
-      backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
-      -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%)
-        brightness(140%);
+      .aboutPhoto {
+        background-image: url('../../images/me1.jpg');
+        background-size: 20rem;
+        height: 17rem;
+        width: 20rem;
+        margin: 0 5rem 2rem;
+        border-radius: 3rem;
+      }
 
-      p {
-        color: $yellow;
-        font-size: 3rem;
-        margin: 2rem;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+      .aboutText {
+        height: 20rem;
+        width: 30rem;
+        margin: 0 5rem;
+        border-radius: 3rem;
+        background-color: rgba(141, 139, 139, 0.8);
+        backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+          brightness(140%);
+        -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+          brightness(140%);
+
+        p {
+          color: $yellow;
+          font-size: 0.9rem;
+          margin: 1.2rem;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+        }
       }
     }
-
     .aboutStack {
       text-align: center;
       width: 70%;
-      height: 40rem;
+      height: 20rem;
+      margin-top: 2rem;
       border-radius: 3rem;
       background-color: rgba(141, 139, 139, 0.8);
       backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
@@ -55,13 +67,94 @@
 
       p {
         color: $yellow;
-        font-size: 3rem;
-        margin: 5rem 10rem;
+        font-size: 0.9rem;
+        margin: 5rem 1rem;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
       }
 
       .iconContainer {
-        font-size: 10rem;
+        font-size: 2rem;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+
+        .icon {
+          color: $yellow;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 376px) {
+  .aboutPage {
+    background-image: url('../../images/000048.JPG');
+    background-size: 110rem;
+    background-position: 20%;
+    height: 70rem;
+    width: 100%;
+    position: relative;
+    bottom: 10rem;
+    display: flex;
+
+    .aboutContentContainer {
+      width: 100%;
+      height: fit-content;
+      margin-top: 5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .aboutPhoto {
+        background-image: url('../../images/me1.jpg');
+        background-size: 20rem;
+        height: 17rem;
+        width: 20rem;
+        margin: 0 5rem 2rem;
+        border-radius: 3rem;
+      }
+
+      .aboutText {
+        height: 20rem;
+        width: 30rem;
+        margin: 0 5rem;
+        border-radius: 3rem;
+        background-color: rgba(141, 139, 139, 0.8);
+        backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+          brightness(140%);
+        -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+          brightness(140%);
+
+        p {
+          color: $yellow;
+          font-size: 0.9rem;
+          margin: 1.2rem;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+    .aboutStack {
+      text-align: center;
+      width: 70%;
+      height: 20rem;
+      margin-top: 2rem;
+      border-radius: 3rem;
+      background-color: rgba(141, 139, 139, 0.8);
+      backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+      -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+        brightness(140%);
+
+      p {
+        color: $yellow;
+        font-size: 0.9rem;
+        margin: 5rem 1rem;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .iconContainer {
+        font-size: 2rem;
         display: flex;
         justify-content: space-evenly;
         margin-top: 2rem;
@@ -73,4 +166,262 @@
       }
     }
   }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .aboutPage {
+    background-image: url('../../images/000048.JPG');
+    background-size: 150rem;
+    height: 80rem;
+    width: auto;
+    position: relative;
+    bottom: 10rem;
+    display: flex;
+
+    .aboutContentContainer {
+      width: 100%;
+      height: fit-content;
+      margin-top: 17rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .aboutPhoto {
+        background-image: url('../../images/me1.jpg');
+        background-size: 30rem;
+        height: 26rem;
+        width: 30rem;
+        margin: 0 5rem;
+        border-radius: 3rem;
+      }
+
+      .aboutText {
+        height: 26rem;
+        width: 30rem;
+        margin: 0 5rem;
+        border-radius: 3rem;
+        background-color: rgba(141, 139, 139, 0.8);
+        backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+          brightness(140%);
+        -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+          brightness(140%);
+
+        p {
+          color: $yellow;
+          font-size: 1.2rem;
+          margin: 2rem;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+    .aboutStack {
+      text-align: center;
+      width: 70%;
+      height: 25rem;
+      margin-top: 5rem;
+      border-radius: 3rem;
+      background-color: rgba(141, 139, 139, 0.8);
+      backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+      -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+        brightness(140%);
+
+      p {
+        color: $yellow;
+        font-size: 1.2rem;
+        margin: 5rem 10rem;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .iconContainer {
+        font-size: 5rem;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+
+        .icon {
+          color: $yellow;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .aboutPage {
+    background-image: url('../../images/000048.JPG');
+    background-size: 150rem;
+    height: 96rem;
+    width: auto;
+    position: relative;
+    bottom: 8rem;
+    display: flex;
+
+    .aboutContentContainer {
+      width: 100%;
+      height: fit-content;
+      margin-top: 10rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .aboutPhoto {
+        background-image: url('../../images/me1.jpg');
+        background-size: 30rem;
+        height: 26rem;
+        width: 30rem;
+        margin: 0 2rem;
+        border-radius: 3rem;
+      }
+
+      .aboutText {
+        height: 26rem;
+        width: 30rem;
+        margin: 0 2rem;
+        border-radius: 3rem;
+        background-color: rgba(141, 139, 139, 0.8);
+        backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+          brightness(140%);
+        -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+          brightness(140%);
+
+        p {
+          color: $yellow;
+          font-size: 1.2rem;
+          margin: 2rem;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+    .aboutStack {
+      text-align: center;
+      width: 70%;
+      height: 25rem;
+      margin-top: 5rem;
+      border-radius: 3rem;
+      background-color: rgba(141, 139, 139, 0.8);
+      backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+      -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+        brightness(140%);
+
+      p {
+        color: $yellow;
+        font-size: 1.2rem;
+        margin: 5rem 10rem;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .iconContainer {
+        font-size: 5rem;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+
+        .icon {
+          color: $yellow;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  .aboutPage {
+    background-image: url('../../images/000048.JPG');
+    background-size: 250rem;
+    height: 170rem;
+    width: auto;
+    position: relative;
+    bottom: 10rem;
+    display: flex;
+
+    .aboutContentContainer {
+      width: 100%;
+      margin-top: 17rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .aboutPhoto {
+        background-image: url('../../images/me1.jpg');
+        background-size: 70rem;
+        height: 62rem;
+        width: 69rem;
+        margin: 0 20rem;
+        border-radius: 3rem;
+      }
+
+      .aboutText {
+        height: 62rem;
+        width: 70rem;
+        margin: 0 20rem;
+        border-radius: 3rem;
+        background-color: rgba(141, 139, 139, 0.8);
+        backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+          brightness(140%);
+        -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+          brightness(140%);
+
+        p {
+          color: $yellow;
+          font-size: 3rem;
+          margin: 2rem;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+        }
+      }
+
+      .aboutStack {
+        text-align: center;
+        width: 70%;
+        height: 40rem;
+        border-radius: 3rem;
+        background-color: rgba(141, 139, 139, 0.8);
+        backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+          brightness(140%);
+        -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+          brightness(140%);
+
+        p {
+          color: $yellow;
+          font-size: 3rem;
+          margin: 5rem 10rem;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .iconContainer {
+          font-size: 10rem;
+          display: flex;
+          justify-content: space-evenly;
+          margin-top: 2rem;
+
+          .icon {
+            color: $yellow;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
 }
