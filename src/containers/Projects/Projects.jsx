@@ -6,7 +6,7 @@ import Carousel from '../../components/Carousel';
 import CarouselButton from '../../components/CarouselButton';
 import { useState } from 'react/cjs/react.development';
 
-const Projects = (props) => {
+const Projects = () => {
   const [selectedProject, setNewProject] = useState(projects[0]);
 
   const findProjectID = (id) => {
