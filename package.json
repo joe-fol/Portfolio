@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "https://joe-fol.github.io/portfolio/",
+  "homepage": "https://joe-fol.github.io/portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
