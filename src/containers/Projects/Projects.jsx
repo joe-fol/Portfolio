@@ -4,10 +4,10 @@ import HeadingBar from '../../components/HeadingBar';
 import projects from '../../data/projects';
 import Carousel from '../../components/Carousel';
 import CarouselButton from '../../components/CarouselButton';
-import { useState } from 'react/cjs/react.development';
+import { useState } from 'react';
 
 const Projects = () => {
-  const [selectedProject, setNewProject] = useState(projects[0]);
+  const [currentProject, setNewProject] = useState(projects[0]);
   
   const findProjectID = (id) => {
     const newProject = projects.find((project) => id === project.id);
@@ -36,12 +36,12 @@ const Projects = () => {
 
           <div className={styles.big}>
             <Carousel
-              key={selectedProject.id}
-              name={selectedProject.strName}
-              img={selectedProject.strImg}
-              blurb={selectedProject.strBlurb}
-              code={selectedProject.strCode}
-              ghPages={selectedProject.strPages}
+              key={currentProject.id}
+              name={currentProject.strName}
+              img={currentProject.strImg}
+              blurb={currentProject.strBlurb}
+              code={currentProject.strCode}
+              ghPages={currentProject.strPages}
             />
           </div>
         </article>
