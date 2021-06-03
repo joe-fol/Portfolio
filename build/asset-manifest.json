@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.a0981769.chunk.css",
+    "main.js": "/portfolio/static/js/main.8c6feccf.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.8c6feccf.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.88fc9e72.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.88fc9e72.js.map",
+    "static/js/2.aa240303.chunk.js": "/portfolio/static/js/2.aa240303.chunk.js",
+    "static/js/2.aa240303.chunk.js.map": "/portfolio/static/js/2.aa240303.chunk.js.map",
+    "static/js/3.5037fd86.chunk.js": "/portfolio/static/js/3.5037fd86.chunk.js",
+    "static/js/3.5037fd86.chunk.js.map": "/portfolio/static/js/3.5037fd86.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.a0981769.chunk.css.map": "/portfolio/static/css/main.a0981769.chunk.css.map",
+    "static/js/2.aa240303.chunk.js.LICENSE.txt": "/portfolio/static/js/2.aa240303.chunk.js.LICENSE.txt",
+    "static/media/ContactMe.module.scss": "/portfolio/static/media/000017.b0c5c1f8.JPG",
+    "static/media/AboutMe.module.scss": "/portfolio/static/media/me1.8f1bfb8e.jpg",
+    "static/media/Landing.module.scss": "/portfolio/static/media/01033.f50684b4.jpg",
+    "static/media/Projects.module.scss": "/portfolio/static/media/01064.0e9d1f6a.jpg",
+    "static/media/joe-folkard-cv.e73f7d96.pdf": "/portfolio/static/media/joe-folkard-cv.e73f7d96.pdf",
+    "static/media/Navbar.module.scss": "/portfolio/static/media/logo.f864dc05.svg",
+    "static/media/morse.d9e44e04.png": "/portfolio/static/media/morse.d9e44e04.png",
+    "static/media/ticket.67e7ed54.png": "/portfolio/static/media/ticket.67e7ed54.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.88fc9e72.js",
+    "static/js/2.aa240303.chunk.js",
+    "static/css/main.a0981769.chunk.css",
+    "static/js/main.8c6feccf.chunk.js"
+  ]
+}
