@@ -8,12 +8,12 @@ import { useState } from 'react/cjs/react.development';
 
 const Projects = () => {
   const [selectedProject, setNewProject] = useState(projects[0]);
-
+  
   const findProjectID = (id) => {
     const newProject = projects.find((project) => id === project.id);
     setNewProject(newProject);
   };
-
+  
 
   const generateButtonJSX = projects.map((item) => {
     return (

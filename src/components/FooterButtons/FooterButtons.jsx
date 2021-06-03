@@ -11,7 +11,7 @@ const FooterButtons = (props) => {
   return (
     <>
       <button className={style}>
-          <a href={`${props.link}`} target="_blank" rel="noopener noreferrer" {...props.isDownloadable ? 'download' : ''}>{props.label}</a>
+        <a href={`${props.link}`} target="_blank" rel="noopener noreferrer" download={props.isDownloadable} >{props.label}</a>
       </button>
     </>
   );

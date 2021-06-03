@@ -7,10 +7,10 @@ import ContactForm from '../../components/ContactForm';
 const ContactMe = () => {
   return (
     <>
-      <div id='contact' className={styles.header}>
+      <section id='contact' className={styles.header}>
         <HeadingBar header="Contact me" />
-      </div>
-      <div className={styles.contactPage}>
+      </section>
+      <article className={styles.contactPage}>
         <div className={styles.formRight}>
           <ContactForm />
         </div>
@@ -26,7 +26,7 @@ const ContactMe = () => {
         <p>Many thanks,</p>
         <p>Joe Folkard</p>
       </form>
-      </div>
+      </article>
       <Footer />
     </>
   );
