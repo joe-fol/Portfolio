@@ -1,5 +1,6 @@
 import morse from '../images/projects/morseRounded.png';
 import ticket from '../images/projects/ticket2.png';
+import calculator from '../images/projects/calculator.png';
 
 const projects = [
   {
@@ -19,6 +20,15 @@ const projects = [
     strPages: 'https://joe-fol.github.io/ticket-tracker/',
     strCode: 'https://github.com/joe-fol/ticket-tracker',
   },
+  {
+    id: 2,
+    strName: 'Calculator',
+    strImg: calculator,
+    strBlurb:
+      'A super simple Js calculator',
+    strPages: 'https://joe-fol.github.io/Calculator/',
+    strCode: 'https://github.com/joe-fol/Calculator',
+  } 
 ];
 
 export default projects;
