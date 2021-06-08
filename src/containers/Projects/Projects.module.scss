@@ -240,7 +240,7 @@
 
     .work {
       display: flex;
-      height: 70rem;
+      height: 95rem;
       width: 70%;
       margin-top: 15rem;
       border-radius: 3rem;
@@ -250,10 +250,9 @@
         brightness(140%);
 
       .small {
-        width: 30%;
+        width: 100%;
+        display: flex;
         height: auto;
-        border-right: 1rem solid rgba(141, 139, 139, 0.2);
-        border-radius: 3rem;
         overflow: auto;
       }
     }

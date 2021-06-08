@@ -1,5 +1,5 @@
-import morse from '../images/projects/morse.png';
-import ticket from '../images/projects/ticket.png';
+import morse from '../images/projects/morseRounded.png';
+import ticket from '../images/projects/ticket2.png';
 
 const projects = [
   {

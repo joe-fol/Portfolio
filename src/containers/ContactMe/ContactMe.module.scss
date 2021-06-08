@@ -460,29 +460,29 @@
     align-items: center;
 
     .formRight {
-      // margin-bottom: 3rem;
+      margin-top: 9rem;
       display: flex;
       flex-direction: column;
-      width: 100rem;
+      width: 70rem;
       margin-top: 2rem;
     }
     label {
       color: $yellow;
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin-left: 5rem;
       margin-top: 3rem;
       // text-shadow: $shadow;
     }
     input {
       color: $yellow;
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin: 3rem;
       text-shadow: $shadow;
       display: flex;
       flex-direction: column;
       margin-top: 1rem;
       text-indent: 5rem;
-      width: 100rem;
+      width: 70rem;
       height: 7rem;
       border-radius: 3rem;
       gap: 5rem;
@@ -513,7 +513,7 @@
       margin-left: 3rem;
       color: $yellow;
       text-shadow: $shadow;
-      width: 100rem;
+      width: 70rem;
       height: 40rem;
       border-radius: 3rem;
       background-color: rgba(141, 139, 139, 0.8);
@@ -529,7 +529,7 @@
     }
     .formLeft {
       margin-top: 10rem;
-      width: 100rem;
+      width: 70rem;
       height: 60rem;
       border-radius: 3rem;
       background-color: rgba(141, 139, 139, 0.8);
