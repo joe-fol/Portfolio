@@ -34,8 +34,7 @@ const projects = [
     id: 3,
     strName: 'Snake',
     strImg: snake,
-    strBlurb:
-      'Simple Snake clone that was built in a week on the nology bootcamp',
+    strBlurb: 'Simple Snake clone that was built in a week on the nology bootcamp',
     strPages: 'https://joe-fol.github.io/Snake/',
     strCode: 'https://github.com/joe-fol/Snake',
   } 
