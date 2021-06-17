@@ -6,10 +6,6 @@ import AboutMe from "./containers/AboutMe";
 import Projects from "./containers/Projects";
 import ContactMe from './containers/ContactMe';
 
-
-
-
-
 function App() {
   return (
     <>

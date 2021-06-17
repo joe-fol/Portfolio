@@ -1,6 +1,7 @@
 import morse from '../images/projects/morseRounded.png';
 import ticket from '../images/projects/ticket2.png';
 import calculator from '../images/projects/calculator.png';
+import snake from '../images/projects/snake.png';
 
 const projects = [
   {
@@ -28,6 +29,15 @@ const projects = [
       'A super simple Js calculator',
     strPages: 'https://joe-fol.github.io/Calculator/',
     strCode: 'https://github.com/joe-fol/Calculator',
+  },
+  {
+    id: 3,
+    strName: 'Snake',
+    strImg: snake,
+    strBlurb:
+      'Simple Snake clone that was built in a week',
+    strPages: 'https://joe-fol.github.io/Snake/',
+    strCode: 'https://github.com/joe-fol/Snake',
   } 
 ];
 
